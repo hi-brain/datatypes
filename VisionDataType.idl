@@ -1,0 +1,24 @@
+module Vision {
+	struct Time
+	{
+	    unsigned long sec;
+	    unsigned long msec;
+	};
+	struct ReceptiveField {
+		Time tm;
+		unsigned short x;
+		unsigned short y;
+		unsigned short t;
+		unsigned short type;
+		sequence<octet> pixels;
+	};
+	struct Image {
+		Time tm;
+		unsigned long x;
+		unsigned long y;
+		unsigned long t;
+		unsigned long type;
+		sequence<octet> pixels;
+	};
+
+};
